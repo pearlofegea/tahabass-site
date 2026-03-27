@@ -7,17 +7,34 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">taha<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="kitapligim.html">Kitaplık</a></li>
+      <li><a href="https://github.com/pearlofegea" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </nav>
+
   <main class="container">
     <section class="page-hero">
-      <a class="back-link" href="index.html">← Ana sayfaya dön</a>
-      <p class="eyebrow">KİTAPLIK</p>
-      <h1 class="page-title">Kitaplığım</h1>
+      <a class="back-link" href="index.html">← Ana sayfa</a>
+      <p class="eyebrow">Kitaplık</p>
+      <h1 class="page-title">Okuduklarım</h1>
       <p class="page-description">
-        Okuduğum ve iz bırakan kitapları burada topluyorum. Bu sayfa benim için
-        sadece bir liste değil; aynı zamanda okuma düzenimi koruyan, düşüncelerimi
-        arşivleyen ve zamanla büyüyecek kişisel bir alan.
+        Bitirdiğim, şu an okuduğum ve sırada bekleyen kitapları burada
+        topluyorum. Her biri için kısa bir not ve özet düşüyorum.
       </p>
     </section>
+
+    <div class="filter-bar">
+      <button class="filter-btn active">Tümü</button>
+      <button class="filter-btn">Okundu</button>
+      <button class="filter-btn">Okunuyor</button>
+      <button class="filter-btn">Sırada</button>
+    </div>
+
+    <p class="book-count"><span>4</span> kitap listeleniyor</p>
 
     <section class="books-grid">
       <article class="book-card">
@@ -37,7 +54,7 @@
           <h3>Özet</h3>
           <p>
             Küçük alışkanlıkların uzun vadede büyük sonuçlar oluşturduğunu,
-            davranış değişiminin ise kimlik, çevre ve tekrar üzerinden
+            davranış değişiminin kimlik, çevre ve tekrar üzerinden
             şekillendiğini anlatıyor.
           </p>
         </div>
@@ -59,8 +76,8 @@
         <div class="book-section">
           <h3>Özet</h3>
           <p>
-            İnsan yaşamının yalnızca maddi ihtiyaçlarla değil; sevgi, paylaşım ve
-            manevi anlam ile şekillendiğini hikâye üzerinden anlatan güçlü bir eser.
+            Yaşamın yalnızca maddi ihtiyaçlarla değil; sevgi, paylaşım ve
+            manevi anlam ile şekillendiğini hikâye üzerinden anlatan bir eser.
           </p>
         </div>
       </article>
@@ -74,16 +91,15 @@
         <div class="book-section">
           <h3>Kısa Not</h3>
           <p>
-            Dikkatin parçalandığı bir çağda gerçekten derin çalışmanın ne kadar
+            Dikkatin sürekli parçalandığı bir çağda derin çalışmanın ne kadar
             değerli olduğunu net biçimde hatırlatıyor.
           </p>
         </div>
         <div class="book-section">
           <h3>Özet</h3>
           <p>
-            Yüksek dikkat gerektiren odaklı çalışmanın, hem öğrenme kapasitesini
-            hem de üretkenliği artırdığını; dağınık dikkat kültürünün ise kaliteyi
-            düşürdüğünü savunuyor.
+            Odaklı çalışmanın öğrenme kapasitesini ve üretkenliği artırdığını;
+            dağınık dikkat kültürünün ise kaliteyi düşürdüğünü savunuyor.
           </p>
         </div>
       </article>
@@ -97,19 +113,32 @@
         <div class="book-section">
           <h3>Kısa Not</h3>
           <p>
-            İnsanlığın büyük hikâyesine geniş açıdan bakmak için okumak istediğim
-            temel kitaplardan biri.
+            İnsanlığın büyük hikâyesine geniş açıdan bakmak için okumak
+            istediğim temel kitaplardan biri.
           </p>
         </div>
         <div class="book-section">
           <h3>Özet</h3>
           <p>
-            İnsan türünün bilişsel, tarımsal ve bilimsel dönüşümler üzerinden nasıl
-            bugünkü dünyayı kurduğunu tarihsel bir perspektifle inceliyor.
+            İnsan türünün bilişsel, tarımsal ve bilimsel dönüşümler üzerinden
+            bugünkü dünyayı nasıl kurduğunu tarihsel perspektifle inceliyor.
           </p>
         </div>
       </article>
     </section>
   </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p>© 2025 Taha Baş<span>.</span> Istanbul'dan.</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/pearlofegea" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://youtube.com/@tahadashbash" target="_blank">YouTube</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
