@@ -8,11 +8,14 @@
 </head>
 <body>
   <nav class="nav">
-    <a class="nav-brand" href="index.html">taha<span>.</span></a>
+    <a class="nav-brand" href="index.html">
+      <img class="nav-avatar" src="hero-bg.jpg" alt="Taha Baş" />
+      <span class="nav-name">Taha Baş</span>
+    </a>
     <ul class="nav-links">
-      <li><a href="kitapligim.html">Kitaplık</a></li>
       <li><a href="https://github.com/pearlofegea" target="_blank">GitHub</a></li>
       <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://www.youtube.com/@tahadashbash" target="_blank">YouTube</a></li>
     </ul>
   </nav>
 
@@ -22,8 +25,13 @@
       <p class="eyebrow">Kitaplık</p>
       <h1 class="page-title">Okuduklarım</h1>
       <p class="page-description">
-        Bitirdiğim, şu an okuduğum ve sırada bekleyen kitapları burada
+        Bitirdiğim, şu an okuduğum ve rafımda bekleyen kitapları burada
         topluyorum. Her biri için kısa bir not ve özet düşüyorum.
+      </p>
+      <p class="section-quote">
+        "Bir insan 60 yıl yaşar, tüm deneyimlerini ve bilgi birikimini 60 sayfaya
+        sığdırır. Bir kitap açarsın, karşında bir ömür durur. Bilgi en güçlü
+        sermayedir — ne çalınır, ne eskir."
       </p>
     </section>
 
@@ -31,112 +39,47 @@
       <button class="filter-btn active">Tümü</button>
       <button class="filter-btn">Okundu</button>
       <button class="filter-btn">Okunuyor</button>
-      <button class="filter-btn">Sırada</button>
+      <button class="filter-btn">Rafımdakiler</button>
     </div>
 
-    <p class="book-count"><span>4</span> kitap listeleniyor</p>
+    <p class="book-count"><span>0</span> kitap listeleniyor</p>
 
     <section class="books-grid">
-      <article class="book-card">
-        <div class="book-top">
-          <p class="book-title">Atomic Habits</p>
-          <span class="status status-read">Okundu</span>
-        </div>
-        <p class="book-author">James Clear</p>
-        <div class="book-section">
-          <h3>Kısa Not</h3>
-          <p>
-            Disiplinin motivasyondan çok sistem kurmakla ilgili olduğunu güçlü
-            şekilde hissettiren kitaplardan biri.
-          </p>
-        </div>
-        <div class="book-section">
-          <h3>Özet</h3>
-          <p>
-            Küçük alışkanlıkların uzun vadede büyük sonuçlar oluşturduğunu,
-            davranış değişiminin kimlik, çevre ve tekrar üzerinden
-            şekillendiğini anlatıyor.
-          </p>
-        </div>
-      </article>
+      <!--
+        YENİ KİTAP EKLEMEK İÇİN AŞAĞIDAKİ ŞABLONU KOPYALA-YAPIŞTIR:
 
-      <article class="book-card">
-        <div class="book-top">
-          <p class="book-title">İnsan Neyle Yaşar?</p>
-          <span class="status status-read">Okundu</span>
-        </div>
-        <p class="book-author">Lev Tolstoy</p>
-        <div class="book-section">
-          <h3>Kısa Not</h3>
-          <p>
-            Kısa olmasına rağmen insan, merhamet ve hayatın anlamı üzerine derin
-            bir etki bırakıyor.
-          </p>
-        </div>
-        <div class="book-section">
-          <h3>Özet</h3>
-          <p>
-            Yaşamın yalnızca maddi ihtiyaçlarla değil; sevgi, paylaşım ve
-            manevi anlam ile şekillendiğini hikâye üzerinden anlatan bir eser.
-          </p>
-        </div>
-      </article>
-
-      <article class="book-card">
-        <div class="book-top">
-          <p class="book-title">Deep Work</p>
-          <span class="status status-reading">Okunuyor</span>
-        </div>
-        <p class="book-author">Cal Newport</p>
-        <div class="book-section">
-          <h3>Kısa Not</h3>
-          <p>
-            Dikkatin sürekli parçalandığı bir çağda derin çalışmanın ne kadar
-            değerli olduğunu net biçimde hatırlatıyor.
-          </p>
-        </div>
-        <div class="book-section">
-          <h3>Özet</h3>
-          <p>
-            Odaklı çalışmanın öğrenme kapasitesini ve üretkenliği artırdığını;
-            dağınık dikkat kültürünün ise kaliteyi düşürdüğünü savunuyor.
-          </p>
-        </div>
-      </article>
-
-      <article class="book-card">
-        <div class="book-top">
-          <p class="book-title">Sapiens</p>
-          <span class="status status-queue">Sırada</span>
-        </div>
-        <p class="book-author">Yuval Noah Harari</p>
-        <div class="book-section">
-          <h3>Kısa Not</h3>
-          <p>
-            İnsanlığın büyük hikâyesine geniş açıdan bakmak için okumak
-            istediğim temel kitaplardan biri.
-          </p>
-        </div>
-        <div class="book-section">
-          <h3>Özet</h3>
-          <p>
-            İnsan türünün bilişsel, tarımsal ve bilimsel dönüşümler üzerinden
-            bugünkü dünyayı nasıl kurduğunu tarihsel perspektifle inceliyor.
-          </p>
-        </div>
-      </article>
+        <article class="book-card">
+          <div class="book-top">
+            <p class="book-title">Kitap Adı</p>
+            <span class="status status-read">Okundu</span>
+            ← Durum seçenekleri:
+              status-read    → Okundu
+              status-reading → Okunuyor
+              status-queue   → Rafımdakiler
+          </div>
+          <p class="book-author">Yazar Adı</p>
+          <div class="book-section">
+            <h3>Kısa Not</h3>
+            <p>Kitap hakkında kısa notun.</p>
+          </div>
+          <div class="book-section">
+            <h3>Özet</h3>
+            <p>Kitabın kısa özeti.</p>
+          </div>
+        </article>
+      -->
     </section>
   </main>
 
   <footer>
     <div class="footer-inner">
       <div class="footer-left">
-        <p>© 2025 Taha Baş<span>.</span> Istanbul'dan.</p>
+        <p>© 2026 Taha Baş · Istanbul</p>
       </div>
       <div class="footer-right">
         <a href="https://github.com/pearlofegea" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-        <a href="https://youtube.com/@tahadashbash" target="_blank">YouTube</a>
+        <a href="https://www.youtube.com/@tahadashbash" target="_blank">YouTube</a>
       </div>
     </div>
   </footer>
